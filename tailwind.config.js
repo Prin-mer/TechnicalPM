@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,jsx}",
@@ -7,12 +7,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#1F1F1F",
-        accent: "#FFD700",
-        background: "#F5F5F5",
+        nude: "#F5F5DC",
+        yellow: "#FFD700",
+        purple: {
+          500: "#7C3AED",
+        },
+      },
+      boxShadow: {
+        profile: "0 4px 8px rgba(0, 0, 0, 0.25)",
       },
     },
   },
   plugins: [],
 };
-￼Enter
