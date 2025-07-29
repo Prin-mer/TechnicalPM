@@ -1,43 +1,42 @@
 // src/components/Testimonials.jsx
-
 import React from "react";
 
 const testimonials = [
   {
     name: "Anthony Obasi",
-    image: "/testimonials/anthony.jpg",
     quote:
-      "Nkem’s analytical, communication, problem-solving, and teamwork skills are truly impressive.",
+      "Nkem has excellent analytical and communication skills, with a keen eye for detail and collaboration.",
+    image: "/testi1.jpg",
   },
   {
     name: "Tosin Okumoye",
-    image: "/testimonials/tosin.jpg",
     quote:
-      "He has a firm grasp of business analysis knowledge areas and engages stakeholders effectively.",
+      "She understands business analysis and effectively engages stakeholders to deliver quality results.",
+    image: "/testi2.jpg",
   },
 ];
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="py-16 px-4 bg-white dark:bg-gray-900">
-      <h2 className="text-3xl font-bold text-center mb-8 text-purple-600">
-        Testimonials
+    <section className="py-16 bg-gray-100 dark:bg-[#1f1f1f]" id="testimonials">
+      <h2 className="text-3xl font-bold text-center text-yellow-500 mb-10">
+        Recommendations
       </h2>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10">
+      <div className="overflow-x-auto whitespace-nowrap flex gap-6 px-6 animate-scroll">
         {testimonials.map((testi, index) => (
           <div
             key={index}
-            className="max-w-sm text-center p-6 bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-md"
+            className="min-w-[300px] bg-white dark:bg-[#2a2a2a] rounded-2xl shadow-lg p-6"
           >
             <img
               src={testi.image}
               alt={testi.name}
-              className="w-20 h-20 rounded-full mx-auto object-cover border-4 border-purple-500 mb-4"
+              className="w-16 h-16 rounded-full object-cover mb-4 mx-auto"
             />
-            <p className="italic text-gray-700 dark:text-gray-200 mb-2">
-              “{testi.quote}”
+            <p className="text-sm text-center italic mb-2">"{testi.quote}"</p>
+            <p className="text-center font-semibold text-gray-700 dark:text-gray-300">
+              {testi.name}
             </p>
-            <p className="font-semibold text-purple-600">{testi.name}</p>
           </div>
         ))}
       </div>
@@ -46,4 +45,3 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-￼Enter
