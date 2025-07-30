@@ -72,4 +72,3 @@ const AwardsCertifications = () => {
 };
 
 export default AwardsCertifications;
-￼Enter
